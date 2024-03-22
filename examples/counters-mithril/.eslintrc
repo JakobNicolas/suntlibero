@@ -1,0 +1,20 @@
+{
+  "plugins": ["functional"],
+  "extends": ["plugin:functional/external-recommended", "plugin:functional/recommended"],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "functional/functional-parameters": "off",
+    "functional/no-conditional-statement": [
+      "error",
+      {
+        "allowReturningBranches": true
+      }
+    ],
+    "functional/no-expression-statement": [
+      "error",
+      {
+        "ignorePattern": "^(assert|(describe|test|expect|console)[^\\w])"
+      }
+    ]
+  }
+}

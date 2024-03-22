@@ -1,0 +1,25 @@
+{
+  "name": "counters-mithril",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@ts-elmish/basic-effects": "workspace:*",
+    "@ts-elmish/core": "workspace:*",
+    "@ts-elmish/mithril": "workspace:*",
+    "mithril": "^2.0.4",
+    "ts-micro-dict": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/mithril": "^2.0.8",
+    "serve": "^11.3.2",
+    "ts-loader": "^8.3.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  },
+  "scripts": {
+    "watch": "webpack -w --mode development",
+    "serve": "serve -s public",
+    "clean": "rm -rf public/build",
+    "build": "webpack --mode production"
+  }
+}
